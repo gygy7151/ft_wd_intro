@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdnjs.cloudflar.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.css" rel="stylesheet">
+        <link href="css/jquery.fullPage.css" rel="stylesheet">
+        <script src="htpps://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top"></nav>
+        <div id="book1">..</div>
+        <div id="book2">..</div>
+        <div id="book3">..</div>
+        <div id="video-list">..</div>
+
+        <div id="fullpage">
+            <div id="book1" class="book-container"></div>
+                <div class="container">
+                    ..
+                </div>
+
+                <script src="jquery.min.js"></script>
+        </div>
+        <!--세로 스크롤 영역 정하기- class="section"-->
+        <div id="fullpage">
+            <div id="book1" class="book-container section"></div>
+            <div id="book2" class="book-container section"></div>
+            <div id="book3" class="book-container section"></div>
+            <div id="video-list" class="container section"></div>
+        </div>
+
+        <!--가로 스크롤 영역 정하기- class="slide"-->
+        <div id="video-list" class="container section">
+            <h1>동영상 강의</h1>
+            <div class="row slide"></div>
+            <div class="row slide"></div>
+            <div class="row slide"></div>
+        </div>
+
+        <script>
+            $(document).ready(function(){
+                $("#fullpage").fullpage();
+            });
+        </script>
+    </body>
+</html>
