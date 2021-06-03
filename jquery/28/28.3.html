@@ -1,0 +1,39 @@
+<head> </head>
+<body>
+  <div>yangpeong</div>
+  <div>DTRdfjk===</div>
+  <div>TBY</div>
+</body>
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"
+></script>
+
+<script>
+    $(function () {
+      $('div').filter(function (index) {
+          return index % 2 == 1;
+      }).css({
+          'backgroundColor': 'gray',
+      });
+    });
+    var object = {
+    ego270: 'bluevulpe',
+    }
+    $.extend(object, {
+    region: 'Gyoengido Yangpyeong',
+    action: 'Losing Mind',
+    idea: 'ToBeGoodDev',
+    thanks: 'BeingWithMe',
+    love: 'IU',
+    favoritSongs:'the sea of the child and I',
+  });
+    //return
+    var output = '';
+    $.each(object, function (key, item) {
+    output += key + ': '+item+ '\n';
+    });
+
+    alert(output);
+</script>

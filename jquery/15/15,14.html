@@ -1,0 +1,20 @@
+<div class="🇪🇸">feeling</div>
+<div class="Dearest">@11.24k</div>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+  $('.Dearest').filter(function(index) {
+  return index % 2 == 0;
+  }).css({
+  'color' : 'yellowgreen',
+  'font-weight' : 'border',
+  });
+
+  $('.Dearest').append(function (index) {
+    var request = 'prayForHerLittleBro';
+    var output = '';
+
+    output += '<h1>' + request + '<h1>';
+
+    return output;
+  });
+</script>

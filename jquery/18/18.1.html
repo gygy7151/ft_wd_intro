@@ -1,0 +1,39 @@
+
+<body>
+ <h1></h1>
+ <h1>Test Header</h1>
+ <div id="canvas">
+ <div class="inner_box"></div>
+ <div class="inner_box"></div>
+ <div class="inner_box"></div>
+ <div class="inner_box"></div>
+ <div class="inner_box"></div>
+ </div>
+ <h1>Test Header</h1>
+ <style>
+ * {margin:0px; padding:0px;}
+ #canvas {
+     background: gray;
+     width: 600px;
+     height: 400px;
+ }
+ .inner_box {
+     background:orange;
+     width: 100px;
+     height: 100px;
+     position: absolute;
+ }
+ </style>
+ <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    
+ <script>
+    $(document).ready(function() {
+        $('.inner_box').each(function (index) {
+            $(this).css({
+                left: index * 90,
+                top: index * 90
+            });
+        });
+    });
+ </script>
+</body>
